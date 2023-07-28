@@ -197,9 +197,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
                 cell.backgroundColor = .white
                 if let lessonType = disciplines?[index - 1].lesson[columnIndex]{
                     cell.label.text = "\(lessonType.realHours) / \(lessonType.hours)"
-                } else {
-                    cell.label.text = "\(index) / column: \(columnIndex)"
-                }
+                } 
             }
             
             return cell
@@ -313,3 +311,9 @@ class StickColumnView: UICollectionReusableView {
         }
     }
 }
+
+/*Tasks
+ 1. Менять цвета на уч. часах
+ 
+ 
+ */
