@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CompositionLayout
 //
-//  Created by nurlanispaew on 27.07.2023.
+//  Created by User on 27.07.2023.
 //
 
 import UIKit
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
                     disciplines = temp.semesters[semesterIndex].disciplines
                     for discipline in disciplines! {
                         disciplineCount += discipline.lesson.count
-                        print("disciplineCount: \(disciplineCount)")
+                        //print("disciplineCount: \(disciplineCount)")
                         
                     }
                     disciplineCollectionView.reloadData()
