@@ -196,8 +196,25 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             } else {
                 cell.backgroundColor = .white
                 if let lessonType = disciplines?[index - 1].lesson[columnIndex]{
-                    cell.label.text = "\(lessonType.realHours) / \(lessonType.hours)"
-                } 
+                    var myInt1 = Int(lessonType.realHours)
+                    var myInt2 = Int(lessonType.hours)
+                    //cell.label.text = "\(lessonType.realHours) / \(lessonType.hours)"
+                    if myInt1 == myInt2 {
+                        let text = NSMutableAttributedString()
+                        text.append(NSAttributedString(string: "\(myInt1 ?? 0)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.green]));
+                        text.append(NSAttributedString(string: " / ", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]));
+                        text.append(NSAttributedString(string: "\(myInt2 ?? 0)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.green]));
+                        cell.label.attributedText = text
+                    } else {
+                        let text = NSMutableAttributedString()
+                        text.append(NSAttributedString(string: "\(myInt1 ?? 0)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.green]));
+                        text.append(NSAttributedString(string: " / ", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]));
+                        text.append(NSAttributedString(string: "\(myInt2 ?? 0)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red]));
+                        cell.label.attributedText = text
+                    }
+                    
+                    //cell.label.text = "\(myInt1 ?? 0) / \(myInt2 ?? 0)"
+                }
             }
             
             return cell
@@ -314,6 +331,6 @@ class StickColumnView: UICollectionReusableView {
 
 /*Tasks
  1. Менять цвета на уч. часах
- 
+ 2. Кнопка поделиться файлом прописать, сделать ее белой
  
  */
