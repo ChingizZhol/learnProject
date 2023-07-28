@@ -199,7 +199,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
                     var myInt1 = Int(lessonType.realHours)
                     var myInt2 = Int(lessonType.hours)
                     //cell.label.text = "\(lessonType.realHours) / \(lessonType.hours)"
-                    if myInt1 == myInt2 {
+                    if (myInt1 ?? 0 >= myInt2 ?? 0) {
                         let text = NSMutableAttributedString()
                         text.append(NSAttributedString(string: "\(myInt1 ?? 0)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.green]));
                         text.append(NSAttributedString(string: " / ", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]));
