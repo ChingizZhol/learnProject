@@ -1,0 +1,202 @@
+[
+    {
+        "iUPSid": "6020fdd49607af09001d5aeb",
+        "title": "ИНДИВИДУАЛЬНЫЙ УЧЕБНЫЙ ПЛАН СТУДЕНТА №2018-24907",
+        "documentURL": "URL",
+        "academicYearId": "1",
+        "academicYear": "2018-2019 учебный год",
+        "semesters": [
+            {
+                "number": "5",
+                "disciplines": [
+                    {
+                        "disciplineId": "5d762432cbbc35013c1dff3f",
+                        "disciplineName":
+                            {
+                                "nameKk": "Электрохимия (ағылшын)",
+                                "nameRu": "1 Электрохимия на англ. Яз",
+                                "nameEn": "Electrochemistry"
+                            },
+                        "lesson": [
+                            {
+                                "lessonTypeId": "1",
+                                "hours": "30",
+                                "realHours": "10"
+                            },
+                            {
+                                "lessonTypeId": "2",
+                                "hours": "15",
+                                "realHours": "5"
+                            },
+                            {
+                                "lessonTypeId": "3",
+                                "hours": "30",
+                                "realHours": "10"
+                            }
+                        ]
+                    },
+                    {
+                        "disciplineId": "5d762431cbbc35013c1df220",
+                        "disciplineName":
+                            {
+                                "nameKk": "Шет тілі C1",
+                                "nameRu": "Иностранный язык C1",
+                                "nameEn": "Foreign language C1"
+                            },
+                        "lesson": [
+                            {
+                                "lessonTypeId": "1",
+                                "hours": "30",
+                                "realHours": "30"
+                            },
+                            {
+                                "lessonTypeId": "2",
+                                "hours": "15",
+                                "realHours": "15"
+                            },
+                            {
+                                "lessonTypeId": "3",
+                                "hours": "30",
+                                "realHours": "10"
+                            }
+                        ]
+                    },
+                    {
+                        "disciplineId": "5d762431cbbc35013c1df2a6",
+                        "disciplineName":
+                            {
+                                "nameKk": "Химиялық анализ негіздері",
+                                "nameRu": "Основы химического анализа",
+                                "nameEn": "Fundamentals of chemical analysis"
+                            },
+                        "lesson": [
+                            {
+                                "lessonTypeId": "1",
+                                "hours": "30",
+                                "realHours": "10"
+                            },
+                            {
+                                "lessonTypeId": "2",
+                                "hours": "30",
+                                "realHours": "10"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": "7",
+                "disciplines": [
+                    {
+                        "disciplineId": "5d762432cbbc35013c1dff3f",
+                        "disciplineName":
+                            {
+                                "nameKk": "Электрохимия (ағылшын)",
+                                "nameRu": "2 Электрохимия на англ. Яз ",
+                                "nameEn": "Electrochemistry"
+                            },
+                        "lesson": [
+                            {
+                                "lessonTypeId": "1",
+                                "hours": "30",
+                                "realHours": "10"
+                            },
+                            {
+                                "lessonTypeId": "2",
+                                "hours": "15",
+                                "realHours": "1"
+                            },
+                            {
+                                "lessonTypeId": "3",
+                                "hours": "30",
+                                "realHours": "10"
+                            }
+                        ]
+                    },
+                    {
+                        "disciplineId": "5d762431cbbc35013c1df220",
+                        "disciplineName":
+                            {
+                                "nameKk": "Шет тілі C1",
+                                "nameRu": "Иностранный язык C1",
+                                "nameEn": "Foreign language C1"
+                            },
+                        "lesson": [
+                            {
+                                "lessonTypeId": "1",
+                                "hours": "30",
+                                "realHours": "30"
+                            },
+                            {
+                                "lessonTypeId": "2",
+                                "hours": "15",
+                                "realHours": "15"
+                            },
+                            {
+                                "lessonTypeId": "3",
+                                "hours": "30",
+                                "realHours": "10"
+                            }
+                        ]
+                    },
+                    {
+                        "disciplineId": "5d762431cbbc35013c1df2a6",
+                        "disciplineName":
+                            {
+                                "nameKk": "Химиялық анализ негіздері",
+                                "nameRu": "Основы химического анализа Чина!!!",
+                                "nameEn": "Fundamentals of chemical analysis"
+                            },
+                        "lesson": [
+                            {
+                                "lessonTypeId": "1",
+                                "hours": "30",
+                                "realHours": "10"
+                            },
+                            {
+                                "lessonTypeId": "2",
+                                "hours": "30",
+                                "realHours": "10"
+                            },
+                            {
+                                "lessonTypeId": "3",
+                                "hours": "300",
+                                "realHours": "10"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
