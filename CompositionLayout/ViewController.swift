@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var semesterCollectionView: UICollectionView!
     
     @IBOutlet weak var learnYearLabel: UILabel!
+    @IBOutlet weak var shareOutlet: UIBarButtonItem!
     
     var learnPlanOfYear: LearnPlanOfYear? = nil
     var disciplines: [Discipline]? = nil
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
         
         semesterCollectionView.delegate = self
         semesterCollectionView.dataSource = self
+        shareOutlet.tintColor = .white
         
         //collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
         
@@ -74,7 +76,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func downloadDocument(_ sender: Any) {
+        print("download document")
         
+        let someText:String = "Hello want to share text also"
+            let objectsToShare:URL = URL(string: "http://www.google.com")!
+            let sharedObjects:[AnyObject] = [objectsToShare as AnyObject,someText as AnyObject]
+            let activityViewController = UIActivityViewController(activityItems : sharedObjects, applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook,UIActivity.ActivityType.postToTwitter,UIActivity.ActivityType.mail]
+
+            self.present(activityViewController, animated: true, completion: nil)
     }
     
     func layout() -> UICollectionViewCompositionalLayout {
@@ -196,8 +208,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             } else {
                 cell.backgroundColor = .white
                 if let lessonType = disciplines?[index - 1].lesson[columnIndex]{
-                    var myInt1 = Int(lessonType.realHours)
-                    var myInt2 = Int(lessonType.hours)
+                    let myInt1 = Int(lessonType.realHours)
+                    let myInt2 = Int(lessonType.hours)
                     //cell.label.text = "\(lessonType.realHours) / \(lessonType.hours)"
                     if (myInt1 ?? 0 >= myInt2 ?? 0) {
                         let text = NSMutableAttributedString()
