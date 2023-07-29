@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A6949A2A7509F600F488B6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A694992A7509F600F488B6 /* CollectionViewCell.swift */; };
+		72A6949C2A750A4D00F488B6 /* SemesterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6949B2A750A4D00F488B6 /* SemesterCell.swift */; };
+		72A6949E2A750A9600F488B6 /* StickyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6949D2A750A9600F488B6 /* StickyCellView.swift */; };
+		72A694A02A750ACD00F488B6 /* StickColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6949F2A750ACD00F488B6 /* StickColumnView.swift */; };
 		D2A445CF2A72858500663154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A445CE2A72858500663154 /* AppDelegate.swift */; };
 		D2A445D12A72858500663154 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A445D02A72858500663154 /* SceneDelegate.swift */; };
 		D2A445D32A72858500663154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A445D22A72858500663154 /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72A694992A7509F600F488B6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		72A6949B2A750A4D00F488B6 /* SemesterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterCell.swift; sourceTree = "<group>"; };
+		72A6949D2A750A9600F488B6 /* StickyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCellView.swift; sourceTree = "<group>"; };
+		72A6949F2A750ACD00F488B6 /* StickColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickColumnView.swift; sourceTree = "<group>"; };
 		D2A445CB2A72858500663154 /* CompositionLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A445CE2A72858500663154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2A445D02A72858500663154 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +73,10 @@
 				D2A445CE2A72858500663154 /* AppDelegate.swift */,
 				D2A445D02A72858500663154 /* SceneDelegate.swift */,
 				D2A445D22A72858500663154 /* ViewController.swift */,
+				72A694992A7509F600F488B6 /* CollectionViewCell.swift */,
+				72A6949B2A750A4D00F488B6 /* SemesterCell.swift */,
+				72A6949D2A750A9600F488B6 /* StickyCellView.swift */,
+				72A6949F2A750ACD00F488B6 /* StickColumnView.swift */,
 				D2A445D42A72858500663154 /* Main.storyboard */,
 				D2A445D72A72858900663154 /* Assets.xcassets */,
 				D2A445E82A73F16B00663154 /* Colors.xcassets */,
@@ -149,10 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A6949A2A7509F600F488B6 /* CollectionViewCell.swift in Sources */,
+				72A6949E2A750A9600F488B6 /* StickyCellView.swift in Sources */,
 				D2A445E52A73926D00663154 /* Model.swift in Sources */,
 				D2A445D32A72858500663154 /* ViewController.swift in Sources */,
 				D2A445CF2A72858500663154 /* AppDelegate.swift in Sources */,
 				D2A445D12A72858500663154 /* SceneDelegate.swift in Sources */,
+				72A6949C2A750A4D00F488B6 /* SemesterCell.swift in Sources */,
+				72A694A02A750ACD00F488B6 /* StickColumnView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

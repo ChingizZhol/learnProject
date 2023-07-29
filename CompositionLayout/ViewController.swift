@@ -254,95 +254,15 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
 }
 
 
-class CollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var label: UILabel!
-}
 
-class SemesterCell: UICollectionViewCell {
-    @IBOutlet weak var semesterNumberLabel: UILabel!
-    @IBOutlet weak var chooseView: UIView!
-}
 
-class StickyCellView: UIView {
-    let label = UILabel()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
 
-    required init?(coder: NSCoder) {
-        fatalError("Not implemented")
-    }
-    
-    func configure(
-        text: String,
-        backgroundColor: UIColor,
-        borderWith: CGFloat,
-        borderColor: UIColor
-    ) {
-        self.backgroundColor = backgroundColor
-        layer.borderWidth = borderWith
-        layer.borderColor = borderColor.cgColor
-        layer.masksToBounds = true
-        
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.adjustsFontForContentSizeCategory = true
-        label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 14)
-        addSubview(label)
-        NSLayoutConstraint.activate([
-            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
-            label.topAnchor.constraint(equalTo: topAnchor),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
-        label.text = text
-        label.textAlignment = .center
-    }
-}
 
-class StickColumnView: UICollectionReusableView {
 
-    static let reuseIdentifier = "sticky-column-reuse-identifier"
-    static let reuseElementKind = "sticky-column-element-kind"
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
 
-    required init?(coder: NSCoder) {
-        fatalError("Not implemented")
-    }
-
-    func configure(
-        stickyColumnDatas: [Discipline],
-        stickyColumnWidth: CGFloat,
-        stickyCellHeight: CGFloat,
-        stickyCellBackgroundColor: UIColor,
-        stickyCellBorderWidth: CGFloat,
-        stickyCellBorderColor: UIColor
-    ) {
-        for index in 0...stickyColumnDatas.count {
-            let frame = CGRect(
-                x: 0,
-                y: CGFloat(index) * stickyCellHeight,
-                width: stickyColumnWidth,
-                height: stickyCellHeight
-            )
-            let stickyCell = StickyCellView(frame: frame)
-            stickyCell.configure(
-                text: index == 0 ? "Наименование дисциплины" : stickyColumnDatas[index-1].disciplineName.nameRu,
-                backgroundColor: stickyCellBackgroundColor,
-                borderWith: stickyCellBorderWidth,
-                borderColor: stickyCellBorderColor
-            )
-            addSubview(stickyCell)
-        }
-    }
-}
 
 /*Tasks
- 1. Менять цвета на уч. часах
- 2. Кнопка поделиться файлом прописать, сделать ее белой
+ 
  
  */
